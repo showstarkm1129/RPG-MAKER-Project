@@ -1,0 +1,64 @@
+# ============================================================
+# RPG Maker MZ Multi-Project .gitignore
+# リポジトリルート: C:\Users\n1250128\Documents\RMMZ\
+# ============================================================
+
+# --- OS・エディタノイズ ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# --- Claude エージェントディレクトリ ---
+.claude/
+
+# --- Windows の誤生成ファイル ---
+nul
+
+# --- 大容量バイナリ音声ファイル ---
+# 全プロジェクトの audio/ フォルダを除外（BGM/BGS/ME/SE）
+*/audio/
+
+# --- 大容量バイナリ画像ファイル ---
+# 全プロジェクトの img/ フォルダを除外（スプライト・タイルセット等）
+*/img/
+
+# --- Effekseerエフェクト・3Dモデル・テクスチャ ---
+*/effects/
+
+# --- フォントファイル ---
+*/fonts/
+
+# --- 動画ファイル ---
+*/movies/
+
+# --- RMMZエンジンコアファイル（RMMZ インストールから再現可能）---
+*/js/rmmz_core.js
+*/js/rmmz_managers.js
+*/js/rmmz_objects.js
+*/js/rmmz_scenes.js
+*/js/rmmz_sprites.js
+*/js/rmmz_windows.js
+*/js/main.js
+
+# --- 外部JavaScriptライブラリ（RMMZ インストールから再現可能）---
+*/js/libs/
+
+# --- RPGMaker バックアップファイル ---
+*/data/*.json_
+
+# ============================================================
+# 追跡対象（gitignore に含めないことで追跡される）:
+#   */data/*.json         - ゲームデータ（マップ・アクター・アイテム等）
+#   */js/plugins/*.js     - カスタムプラグイン
+#   */js/plugins.js       - プラグイン設定
+#   */index.html          - ゲームエントリポイント
+#   */package.json        - プロジェクト設定
+#   */game.rmmzproject    - プロジェクトバージョンマーカー
+#   */css/game.css        - スタイルシート
+#   */icon/icon.png       - アプリアイコン（小さいため追跡）
+# ============================================================
