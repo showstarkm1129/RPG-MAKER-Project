@@ -1,0 +1,29 @@
+# ============================================================
+# RPG Maker MZ Multi-Project .gitattributes
+# 改行コードを LF で統一（共同制作時の差分ノイズ防止）
+# ============================================================
+
+# デフォルト: テキストファイルは LF で正規化
+* text=auto eol=lf
+
+# JSON データファイル（明示的に LF）
+*.json text eol=lf
+
+# JavaScript
+*.js text eol=lf
+
+# HTML / CSS
+*.html text eol=lf
+*.css text eol=lf
+
+# バイナリファイル（変換しない）
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ogg binary
+*.m4a binary
+*.mp4 binary
+*.webm binary
+*.rmmzproject text eol=lf
+*.rmmzsave binary
